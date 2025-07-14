@@ -1278,3 +1278,161 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+
+
+/* ================ Responsive Styles ================ */
+@media (max-width: 992px) {
+    /* Navigation */
+    .navbar-collapse {
+        padding: 20px;
+        background: rgba(0,0,0,0.9);
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .header .text-container {
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .h1-large {
+        font-size: 2.2rem !important;
+    }
+    
+    /* About Section */
+    .basic-1 .text-container {
+        margin-bottom: 30px;
+    }
+    
+    /* Split Section */
+    .split .area-1, 
+    .split .area-2 {
+        width: 100% !important;
+    }
+    
+    /* Projects */
+    .image-container {
+        margin-bottom: 20px;
+    }
+    
+    /* Contact Form */
+    .form-control-input, 
+    .form-control-textarea {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Header Buttons */
+    .btn-solid-lg, 
+    .btn-outline-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Services */
+    .text-box {
+        margin-bottom: 30px;
+    }
+    
+    /* Tech Icons */
+    .tech-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+/* Header - Mobile */
+@media (max-width: 768px) {
+    .header {
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    .header .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* Navigation Mobile */
+@media (max-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px; /* Hauteur de la navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+}
+/* Images Responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Formulaire Contact - Mobile */
+@media (max-width: 576px) {
+    .form-1 .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-control-submit-button {
+        width: 100%;
+    }
+}
+/* Padding général sur mobile */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    section, .basic-1, .basic-2, .basic-3, .form-1 {
+        padding: 60px 0;
+    }
+}
+/* Footer - Mobile */
+@media (max-width: 576px) {
+    .social-container {
+        justify-content: center !important;
+    }
+    
+    .footer .col-lg-12 {
+        text-align: center;
+    }
+}
+/* Boutons - Mobile */
+@media (max-width: 576px) {
+    .btn-solid-lg, 
+    .btn-outline-lg {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
